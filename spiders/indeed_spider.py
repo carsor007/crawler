@@ -11,13 +11,13 @@ class IndeedSpider(CrawlSpider):
         name = "indeed"
  	allowed_domains = ["indeed.com"] 
  	start_urls = [
-                "http://www.indeed.com/jobs?q=linux&l=Chicago&sort=date?",
+                "http://www.indeed.com/jobs?q=linux&l=Dallas&sort=date?",
         ]
      
 
         
         rules = (
-                Rule(SgmlLinkExtractor(allow=('/jobs.q=linux&l=Chicago&sort=date$','q=linux&l=Chicago&sort=date&start=[0-9]+$',),deny=('/my/mysearches', '/preferences', '/advanced_search','/my/myjobs')), callback='parse_item', follow=True),
+                Rule(SgmlLinkExtractor(allow=('/jobs.q=linux&l=Dallas&sort=date$','q=linux&l=Dallas&sort=date&start=[0-9]+$',),deny=('/my/mysearches', '/preferences', '/advanced_search','/my/myjobs')), callback='parse_item', follow=True),
 
      )
 
