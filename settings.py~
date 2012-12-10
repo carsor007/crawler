@@ -23,10 +23,10 @@ DOWNLOADER_MIDDLEWARES = {
 'scrapy.contrib.downloadermiddleware.redirect.RedirectMiddleware' : 543,
 }
 
-MYSQL = {'user':'carsor007',
-        'host' :'carsor007.db.7330208.hostedresource.com',
-        'passwd':'Liberty1',
-        'dbname':'carsor007'}
+MYSQL = {'user':'',
+        'host' :'',
+        'passwd':'',
+        'dbname':''}
 
 
 
